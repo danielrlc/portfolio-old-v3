@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial;
+}
+
+h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 0 0 25px 0;
+}
+
+p {
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
+ul {
+  margin: 1em 0 2em 1em;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+#my-name, #main-nav-list {
+  display: inline-block;
+}
+
+.main-nav {
+  padding: 18px 50px 22px;
+  background-color: #111;
+}
+
+.main-nav a {
+  text-decoration: none;
+}
+
+.main-nav li {
+  display: inline-block;
+  padding: 0 12px;
+}
+
+#my-name {
+  width: 40%;
+}
+
+#main-nav-list {
+  float: right;
+}
+
+.main-nav h1 {
+  font-size: 1.6em;
+  padding: 10px 12px;
+  color: #fff;
+}
+
+.main-nav ul li {
+  display: inline-block;
+  color: #fff;
+  transition: color 0.4s ease;
+}
+
+.main-nav ul li:hover, nav p:hover {
+  color: #666;
+}
+
+/* ---------------------------------------------------------- */
+/* Main section */
+/* ---------------------------------------------------------- */
+
+main {
+  display: flex;
+  width: 100em;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 4em 5%;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.project-image, .project-text {
+  width: 50%;
+  padding: 40px 5%;
+}
+
+.star {
+  color: goldenrod;
+  padding: 0 15px 0 0;
+  line-height: 1.4;
+  position: relative;
+  bottom: 3px;
+}
+
+.small-button {
+  display: inline-block;
+  color: #fff;
+  background-color: #111;
+  padding: 10px 35px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.small-button:hover {
+  color: #666;
+}
+
+/* ---------------------------------------------------------- */
+/* Media queries */
+/* ---------------------------------------------------------- */
+
+@media screen and (max-width: 749px) {
+  #my-name, #main-nav-list {
+    display: block;
+    background-color: #111;
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .main-nav ul li {
+    padding: 6px 8px 0;
+  }
+  
+  .project-image, .project-text {
+    width: 100%;
+  }
+  
+  #project-1a {
+    order: 101;
+  }
+  
+  #project-1b {
+    order: 102;
+  }
+  
+  #project-2a {
+    order: 201;
+  }
+  
+  #project-2b {
+    order: 202;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .main-nav ul li {
+    font-size: 13px;
+    padding: 6px 3px 0;
+  }
+}
