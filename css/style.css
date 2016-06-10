@@ -6,6 +6,11 @@ body {
   font-family: arial;
 }
 
+/*h2 {
+  font-size: 1.6em;
+  padding: 1em;
+}*/
+
 h3 {
   font-size: 1.4em;
   font-weight: bold;
@@ -21,21 +26,12 @@ ul {
   margin: 1em 0 2em 1em;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
 #my-name, #main-nav-list {
   display: inline-block;
 }
 
 .main-nav {
-  padding: 18px 50px 22px;
+  padding: 18px 40px 22px;
   background-color: #111;
 }
 
@@ -49,7 +45,7 @@ hr {
 }
 
 #my-name {
-  width: 40%;
+  width: 45%;
 }
 
 #main-nav-list {
@@ -57,7 +53,7 @@ hr {
 }
 
 .main-nav h1 {
-  font-size: 1.6em;
+  font-size: 1.25em;
   padding: 10px 12px;
   color: #fff;
 }
@@ -76,7 +72,7 @@ hr {
 /* Main section */
 /* ---------------------------------------------------------- */
 
-main {
+#projects-wrapper {
   display: flex;
   width: 100em;
   align-items: center;
@@ -84,7 +80,7 @@ main {
   max-width: 100%;
   justify-content: center;
   margin: 0 auto;
-  padding: 4em 5%;
+  padding: 3em 3%;
 }
 
 img {
@@ -95,7 +91,55 @@ img {
 
 .project-image, .project-text {
   width: 50%;
-  padding: 40px 5%;
+  padding: 40px 4%;
+}
+
+#project-101-text {
+    order: 102;
+  }
+  
+#project-101-image {
+  order: 101;
+}
+
+#project-201-text {
+  order: 201;
+}
+
+#project-201-image {
+  order: 202;
+}
+
+#project-301-text {
+  order: 302;
+}
+
+#project-301-image {
+  order: 301;
+}
+
+#project-401-text {
+  order: 401;
+}
+
+#project-401-image {
+  order: 402;
+}
+
+#project-501-text {
+  order: 502;
+}
+
+#project-501-image {
+  order: 501;
+}
+
+#project-601-text {
+  order: 601;
+}
+
+#project-601-image {
+  order: 602;
 }
 
 .star {
@@ -109,22 +153,60 @@ img {
 .small-button {
   display: inline-block;
   color: #fff;
-  background-color: #111;
+  background-color: goldenrod;
   padding: 10px 35px 10px;
+  margin: 0 30px 5px 0;
   border-radius: 5px;
   text-decoration: none;
-  transition: color 0.4s ease;
+  transition: background-color 0.4s ease;
 }
 
 .small-button:hover {
-  color: #666;
+  background-color: darkgoldenrod;
 }
+
+/*********************************************************/
+/* TABLES
+**********************************************************/
+
+/*.skills-tables {
+  width: 40em;
+}
+
+table {
+  font-size: 15px;
+}
+
+caption {
+  display: none;
+}
+
+thead th {
+  background: #709d9e;
+  color: #fff;
+}
+
+th td { text-decoration: bold; }
+
+th, td {
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background: #e8eeef;
+}
+
+tfoot td {
+  color: #888;
+  font-size: 13px;
+}*/
+
 
 /* ---------------------------------------------------------- */
 /* Media queries */
 /* ---------------------------------------------------------- */
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 819px) {
   #my-name, #main-nav-list {
     display: block;
     background-color: #111;
@@ -141,21 +223,54 @@ img {
     width: 100%;
   }
   
-  #project-1a {
+  #project-101-text {
     order: 101;
   }
   
-  #project-1b {
+  #project-101-image {
     order: 102;
   }
   
-  #project-2a {
+  #project-201-text {
     order: 201;
   }
   
-  #project-2b {
+  #project-201-image {
     order: 202;
   }
+  
+  #project-301-text {
+    order: 301;
+  }
+  
+  #project-301-image {
+    order: 302;
+  }
+  
+  #project-401-text {
+    order: 401;
+  }
+  
+  #project-401-image {
+    order: 402;
+  }
+  
+  #project-501-text {
+    order: 501;
+  }
+  
+  #project-501-image {
+    order: 502;
+  }
+  
+  #project-601-text {
+    order: 601;
+  }
+  
+  #project-601-image {
+    order: 602;
+  }
+
 }
 
 @media screen and (max-width: 479px) {

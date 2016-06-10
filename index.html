@@ -10,6 +10,10 @@
 
 <body>
 
+<!--********************************************************-->
+<!-- Top menu bar -->
+<!--********************************************************-->
+
 <nav role="navigation" class="main-nav">
   <div id="my-name"><h1>Daniel Clarke, Frontend Developer</h1></div>
   <div id="main-nav-list">
@@ -30,36 +34,150 @@
   </div>
 </nav>
     
+
+<!--********************************************************-->
+<!-- List of projects -->
+<!--********************************************************-->
+
 <main>
-  <div class="project-image" id="project-1a">
-    <img src="img/portfolio.png" alt="Portfolio">
-  </div>
-  <div class="project-text" id="project-1b">
-      
-    <h3>Portfolio</h3>
-    <p>I built this portfolio site from scratch without using any framework. It is fully responsive and – IMHO – easy to navigate. With the help of a good designer, it could even be beautiful one day.</p>
-    <ul>
-      <li><i class="fa fa-lg fa-star star"></i>CSS: Flexbox / Responsive</li>
-      <li><i class="fa fa-lg fa-star star"></i>Good accessibility</li>
-      <li><i class="fa fa-lg fa-star star"></i>Good UX - easy to navigate</li>
-    </ul>
-  </div>
-  <div class="project-text" id="project-2b">
-    <h3>JavaScript Calculator</h3>
-    <p>This project is an <a href="https://www.freecodecamp.com/challenges/build-a-javascript-calculator">advanced frontend project on Free Code Camp</a>.</p>
-    <ul>
-      <li><i class="fa fa-lg fa-star star"></i>jQuery</li>
-      <li><i class="fa fa-lg fa-star star"></i>Regular expressions</li>
-      <li><i class="fa fa-lg fa-star star"></i>JavaScript: Manipulating arrays</li>
-    </ul>
-    <a class="small-button" href="http://codepen.io/rawreef/pen/mVmvOy">Code & output</a>
-  </div>
-  <div class="project-image" id="project-2a">
-    <img src="img/js-calculator.png" alt="JavaScript Calculator">
-  </div>
+
+<div id="projects-wrapper">
+
+<section>  
+<div class="project-text" id="project-101-text">    
+  <h3>#01: Portfolio site</h3>
+  <p>I built this responsive portfolio site from scratch without using any framework, so I am completely to blame. The site has good accessibility and can be viewed comfortably on any device.</p>
+  <ul>
+    <li><i class="fa fa-lg fa-star star"></i>CSS: Flexbox, Responsive</li>
+    <li><i class="fa fa-lg fa-star star"></i>Good accessibility</li>
+    <li><i class="fa fa-lg fa-star star"></i>Simple UX - easy to navigate</li>
+  </ul>
+  <a class="small-button" href="http://codepen.io/rawreef/pen/mVmvOy">Code</a>
+</div>
+<div class="project-image" id="project-101-image">
+  <img src="img/portfolio.png" alt="Portfolio">
+</div>
+
+<div class="project-text" id="project-201-text">
+  <h3>#02: JavaScript Calculator</h3>
+  <p>This project is an <a href="https://www.freecodecamp.com/challenges/build-a-javascript-calculator">advanced frontend project on Free Code Camp</a>.</p>
+  <ul>
+    <li><i class="fa fa-lg fa-star star"></i>jQuery</li>
+    <li><i class="fa fa-lg fa-star star"></i>Regular expressions</li>
+    <li><i class="fa fa-lg fa-star star"></i>JavaScript: Arrays, etc.</li>
+  </ul>
+  <a class="small-button" href="http://codepen.io/rawreef/pen/mVmvOy">Code & Output</a>
+</div>
+<div class="project-image" id="project-201-image">
+  <img src="img/js-calculator.png" alt="JavaScript Calculator">
+</div>
+
+<div class="project-text" id="project-301-text">
+  <h3>#03: English Camp Online</h3>
+  <p>This responsive WordPress site is my pet project for English learners in Finland. It's a one-man job: I created the content, deployed the site and now maintain it. For the look of the site, I took the popular <a href="https://wordpress.org/themes/responsive/">Responsive theme</a> and customised it.</p>
+  <ul>
+    <li><i class="fa fa-lg fa-star star"></i>WordPress: Deployment, Plugins, etc.</li>
+    <li><i class="fa fa-lg fa-star star"></i>CSS - Tweaking theme</li>
+    <li><i class="fa fa-lg fa-star star"></i>PHP - Tweaking theme</li>
+  </ul>
+  <p><a class="small-button" href="http://englishcamponline.com">Live Site</a></p>
+</div>
+<div class="project-image" id="project-301-image">
+  <img src="img/eco.png" alt="English Camp Online">
+</div>
+
+<div class="project-text" id="project-401-text">
+  <h3>#04: JavaScript algorithm solution</h3>
+  <p>This is my solution to a JavaScript algorithm problem on Free Code Camp (FCC). The link below takes you to the problem and my solution which you can interact with live on FCC's website. I've also included a link to my complete FCC portfolio.</p>
+  <ul>
+    <li><i class="fa fa-lg fa-star star"></i>JavaScript</li>
+  </ul>
+  <p>
+    <a class="small-button" href="https://www.freecodecamp.com/challenges/sum-all-primes#?solution=%2F%2F%20noprotect%0A%0Afunction%20sumPrimes%28num%29%20{%0A%20%20var%20primesArr%20%3D%20[]%3B%0A%20%20for%20%28var%20i%20%3D%202%3B%20i%20%3C%3D%20num%3B%20i%2B%2B%29%20{%0A%20%20%20%20var%20primeTest%20%3D%20true%3B%0A%20%20%20%20for%20%28var%20j%20%3D%202%3B%20j%20%3C%20i%3B%20j%2B%2B%29%20{%0A%20%20%20%20%20%20if%20%28i%20%25%20j%20%3D%3D%3D%200%29%20{%0A%20%20%20%20%20%20%20%20primeTest%20%3D%20false%3B%0A%20%20%20%20%20%20}%0A%20%20%20%20}%0A%20%20%20%20if%20%28primeTest%29%20{%0A%20%20%20%20%20%20primesArr.push%28i%29%3B%0A%20%20%20%20}%0A%20%20}%0A%20%20var%20sum%20%3D%20primesArr.reduce%28function%28a%2C%20b%29%20{%0A%20%20%20%20return%20a%20%2B%20b%3B%0A%20%20}%29%3B%0A%20%20return%20sum%3B%0A}%0A%0AsumPrimes%28977%29%3B">Solution</a>
+    <a class="small-button" href="http://freecodecamp.com/rawreef">FCC Portfolio</a>
+  </p>
+</div>
+<div class="project-image" id="project-401-image">
+  <img src="img/algorithm.png" alt="JavaScript algorithm solution">
+</div>
+
+<div class="project-text" id="project-501-text">
+  <h3>#05: Quiz on John Williams's film music</h3>
+  <p>In this short quiz wrong answers turn red, sound a gong and trigger feedback, which changes for each wrong answer. The right answer turns green and sounds a (mildly irritating) "ta-da" fanfare.</p>
+  <ul>
+    <li><i class="fa fa-lg fa-star star"></i>JavaScript</li>
+    <li><i class="fa fa-lg fa-star star"></i>jQuery</li>
+    <li><i class="fa fa-lg fa-star star"></i>CSS - Basic responsiveness</li>
+  </ul>
+
+  <p>
+    <a class="small-button" href="http://rawreef.github.io/john-williams-quiz/">Demo</a>
+    <a class="small-button" href="https://github.com/rawreef/john-williams-quiz">Code</a>
+  </p>
+</div>
+<div class="project-image" id="project-501-image">
+  <img src="img/jw-quiz.png" alt="Quiz on John Williams's film music">
+</div>
+
+<div class="project-text" id="project-601-text">
+  <h3>#06: Shopping list</h3>
+  <p>This app shows me getting to grips with jQuery and jQuery UI. You can add shopping items, cross them out, delete them and rearrange them. Shopping has never been such fun, has it?</p>
+  <ul>
+    <li><i class="fa fa-lg fa-star star"></i>jQuery</li>
+    <li><i class="fa fa-lg fa-star star"></i>UX - Simple and efficient</li>
+    <li><i class="fa fa-lg fa-star star"></i>CSS</li>
+  </ul>
+  <p>
+    <a class="small-button" href="http://rawreef.github.io/shopping-list-interactive/">Demo</a>
+    <a class="small-button" href="https://github.com/rawreef/shopping-list-interactive">Code</a>
+  </p>
+</div>
+<div class="project-image" id="project-601-image">
+  <img src="img/shopping-list.png" alt="Shopping list">
+</div>
+</section>
+
+</div>
+
+<!--********************************************************-->
+<!-- Skills tables -->
+<!--********************************************************-->
+
+<!--<div class="skills-tables">
+
+<h2>Soft (and transferable) skills</h2>
+<table>
+  <caption>Breakdown of my soft skills</caption>
+  <thead>
+    <tr>
+      <th scope="col">Skill</th>
+      <th scope="col">Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Teaching</th>
+      <td>Wide experience teaching English to 5- to 65-year-olds. I can communicate with and explain concepts to all kinds of people at all levels of domain expertise. I can also listen carefully to people's individual needs. I can also plan out a
+        course of study.</td>
+    </tr>
+    <tr>
+      <th scope="row">Writing</th>
+      <td>Creating learning content for students. I can write clearly, accurately and concisely.</td>
+    </tr>
+    <tr>
+      <th scope="row">Learning</th>
+      <td>Learning frontend development skills has sharpened up my learning skills. I can find the best resources quickly and have developed strong learning techniques to pick up new skills quickly.</td>
+    </tr>
+  </tbody>
+</table>
+  
+</div>-->
+
+<!--********************************************************-->
+<!-- About section -->
+<!--********************************************************-->
+
 </main>
-    
-    
     
 </body>
 </html>
