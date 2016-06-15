@@ -18,14 +18,23 @@
   <div id="my-name"><h1>Daniel Clarke, Frontend Developer</h1></div>
   <div id="main-nav-list">
     <ul>
-      <li>portfolio</li>
-      <li>skills</li>
-      <li>about</li>
+      <a href="#portfolio">
+        <li>portfolio</li>
+      </a>
+      <a href="#skills">
+        <li>skills</li>
+      </a>
+      <a href="#about">
+        <li>about</li>
+      </a>
       <a href="https://twitter.com/rawreef">
         <li><i class="fa fa-lg fa-twitter"></i></li>
       </a>
       <a href="https://github.com/rawreef?tab=repositories">
         <li><i class="fa fa-lg fa-github"></i></li>
+      </a>
+      <a href="https://www.linkedin.com/in/daniel-clarke-997302109?trk=hp-identity-name">
+        <li><i class="fa fa-lg fa-linkedin"></i></li>
       </a>
       <a href="mailto:daniel@rawreef.com">
         <li><i class="fa fa-lg fa-envelope"></i></li>
@@ -40,16 +49,17 @@
 
 <main>
 
+<a name="portfolio"></a>
+
 <section>
 
 <div id="projects-wrapper">
 
 <div class="project-text" id="project-101-text">    
   <h3>#01: Portfolio site</h3>
-  <p>I built this responsive portfolio site from scratch without using any framework, so I am completely to blame. The site has good accessibility and can be viewed comfortably on any device.</p>
+  <p>I built this responsive portfolio site from scratch without using any framework, so I am completely to blame. The site can be viewed comfortably on any device.</p>
   <ul>
     <li><i class="fa fa-lg fa-star star"></i>CSS: Flexbox, Responsive</li>
-    <li><i class="fa fa-lg fa-star star"></i>Good accessibility</li>
     <li><i class="fa fa-lg fa-star star"></i>Simple UX - easy to navigate</li>
   </ul>
   <a class="small-button" href="http://codepen.io/rawreef/pen/mVmvOy">Code</a>
@@ -59,7 +69,7 @@
 </div>
 
 <div class="project-text" id="project-201-text">
-  <h3>#02: JavaScript Calculator</h3>
+  <h3>#02: JavaScript calculator</h3>
   <p>This project is an <a href="https://www.freecodecamp.com/challenges/build-a-javascript-calculator">advanced frontend project on Free Code Camp</a>.</p>
   <ul>
     <li><i class="fa fa-lg fa-star star"></i>jQuery</li>
@@ -88,7 +98,7 @@
 
 <div class="project-text" id="project-401-text">
   <h3>#04: JavaScript algorithm solution</h3>
-  <p>This is my solution to a JavaScript algorithm problem on Free Code Camp (FCC). The link below takes you to the problem and my solution which you can interact with live on FCC's website. I've also included a link to my complete FCC portfolio.</p>
+  <p>This is my solution to a JavaScript algorithm problem on Free Code Camp (FCC). The link below takes you to the problem and my solution which you can interact with live. My FCC portfolio includes many other algorithm solutions like this.</p>
   <ul>
     <li><i class="fa fa-lg fa-star star"></i>JavaScript</li>
   </ul>
@@ -144,11 +154,13 @@
 <!-- Soft Skills table -->
 <!--********************************************************-->
 
+<a name="skills"></a>
+
 <section>
 
 <div class="skills-tables">
 
-<h2>Soft Skills</h2>
+<h2>Soft skills</h2>
 <table>
   <caption>Breakdown of my soft skills</caption>
   <thead>
@@ -175,8 +187,6 @@
 </table>
   
 </div> <!--end of .skills-table div-->
-<br>
-<br>
 
 <!--********************************************************-->
 <!-- Technical Skills table -->
@@ -184,7 +194,7 @@
 
 <div class="skills-tables">
 
-<h2>Technical Skills</h2>
+<h2>Technical skills</h2>
 <table>
   <caption>Breakdown of my technical skills with links to relevant projects</caption>
   <thead>
@@ -201,76 +211,54 @@
   </tfoot>
   <tbody>
     <tr>
-      <th scope="row">CSS</th>
-      <td class="table-center">3</td>
-      <td>All projects, especially <a href="#portfolio">this portfolio site</a>. Fundamentals of Bootstrap and web animations.</td>
-    </tr>
-    <tr>
-      <th scope="row">Databases</th>
-      <td class="table-center">1</td>
-      <td>Fundamentals of database design, SQL and MongoDB.</td>
-    </tr>
-    <tr>
-      <th scope="row">Ember</th>
-      <td class="table-center">2</td>
-      <td>Fundamentals and more: <a href="https://frontendmasters.com/courses/ember-2/">Frontend Masters course</a>, <a href="https://www.codeschool.com/courses/try-ember">Code School course</a>, <a href="http://emberweekly.com/">Ember Weekly newsletter</a>,
-        <a href="https://emberweekend.com">Ember Weekend podcast</a> and <a href="https://frontsidethepodcast.simplecast.fm/">Frontside the Podcast</a>.</td>
-    </tr>
-    <tr>
-      <th scope="row">General</th>
-      <td class="table-center">3</td>
-      <td>Podcasts and newsletters: <a href="http://devchat.tv/js-jabber/">JavaScript Jabber</a>, <a href="http://shoptalkshow.com/">Shop Talk Show</a>, <a href="https://changelog.com/podcast/">The Changelog</a>, <a href="https://frontsidethepodcast.simplecast.fm/">Frontside the Podcast</a>,
-        <a href="http://javascriptweekly.com/">JavaScript Weekly</a>, <a href="http://emberweekly.com/">Ember Weekly</a>.</td>
-    </tr>
-    <tr>
-      <th scope="row">Git</th>
-      <td class="table-center">2</td>
-      <td>Personal use of Git and <a href="https://github.com/rawreef?tab=repositories">Github</a> for many of my projects.</td>
+      <th scope="row">CSS & Sass</th>
+      <td class="table-center">4</td>
+      <td>Device-agnostic responsive design, Flexbox, Bootstrap, Specificity, DRY, General knowledge from <a href="http://shoptalkshow.com/">Shop Talk Show podcast</a></td>
     </tr>
     <tr>
       <th scope="row">HTML</th>
       <td class="table-center">4</td>
-      <td>All projects listed here, especially <a href="#portfolio">this portfolio site</a>.</td>
-    </tr>
-    <tr>
-      <th scope="row">Java</th>
-      <td class="table-center">1</td>
-      <td>Fundamentals.</td>
+      <td>HTML5 semantic markup, Page structure and headers</td>
     </tr>
     <tr>
       <th scope="row">JavaScript</th>
       <td class="table-center">3</td>
-      <td><a href="#fcc-portfolio">Free Code Camp projects</a> | <a href="#john-williams-quiz">John Williams quiz</a> | <a href="#hot-or-cold">Hot or cold game</a></td>
+      <td>Algorithms, Manipulating arrays, Object-oriented, General knowledge from <a href="https://devchat.tv/js-jabber">JavaScript Jabber podcast</a></td>
     </tr>
     <tr>
-      <th scope="row">jQuery/Ajax</th>
+      <th scope="row">jQuery</th>
       <td class="table-center">3</td>
-      <td><a href="#john-williams-quiz">John Williams quiz</a> | <a href="#hot-or-cold">Hot or cold game</a> | <a href="#shopping-list">Shopping list</a> | Ajax fundamentals</td>
-    </tr>
-    <tr>
-      <th scope="row">Node/npm</th>
-      <td class="table-center">2</td>
-      <td>Node.js fundamentals. Used npm to set up local dev environment, try out Ember and deploy this site to <a href="https://surge.sh/">Surge</a>.</td>
-    </tr>
-    <tr>
-      <th scope="row">PHP</th>
-      <td class="table-center">2</td>
-      <td><a href="#englishcamponline">English Camp Online</a></td>
-    </tr>
-    <tr>
-      <th scope="row">SASS</th>
-      <td class="table-center">1</td>
-      <td>Fundamentals.</td>
-    </tr>
-    <tr>
-      <th scope="row">Usability</th>
-      <td class="table-center">3</td>
-      <td><a href="#englishcamponline">English Camp Online</a> | <a href="#john-williams-quiz">John Williams quiz</a> | <a href="#shopping-list">Shopping list</a></td>
+      <td>DOM manipulation, Click events, AJAX requests</td>
     </tr>
     <tr>
       <th scope="row">WordPress</th>
       <td class="table-center">3</td>
-      <td>Deployed <a href="#englishcamponline">English Camp Online site</a> with a child theme with customised CSS and PHP. Researched and used many WordPress plugins. Kept up with WordPress news through podcasts and news sites.</td>
+      <td>Tweaking plugins, Deployment, Maintenance, Backup, General knowledge from podcasts</td>
+    </tr>
+        <tr>
+      <th scope="row">Git</th>
+      <td class="table-center">2</td>
+      <td>Personal use of Git and <a href="https://github.com/rawreef?tab=repositories">Github</a> for many of my projects</td>
+    </tr>
+    <tr>
+      <th scope="row">JavaScript Frameworks</th>
+      <td class="table-center">2</td>
+      <td>Ember: Small projects and podcast listening. React: Fundamentals.</td>
+    </tr>
+    <tr>
+      <th scope="row">Backend</th>
+      <td class="table-center">2</td>
+      <td>Fundamentals of PHP, Java, SQL and No SQL databases</td>
+    </tr>
+    <tr>
+      <th scope="row">Node/npm</th>
+      <td class="table-center">2</td>
+      <td>Node.js fundamentals. Used npm to set up local dev environment, try out Ember and deploy this site to <a href="https://surge.sh/">Surge</a></td>
+    </tr>
+    <tr>
+      <th scope="row">Build tools</th>
+      <td class="table-center">2</td>
+      <td>Used Ember CLI on basic projects</td>
     </tr>
   </tbody>
 </table>
@@ -283,7 +271,28 @@
 <!-- About section -->
 <!--********************************************************-->
 
+<a name="about"></a>
+
+<section>
+  
+<div class="about">
+
+<h2>About me</h2>
+<p>I'm a self-taught frontend web developer. A while ago I was creating a WordPress website for learning Finnish. I started installing plugins, but when they didn't do exactly what I wanted I began digging into the PHP, JavaScript and jQuery. After
+  hacking away for a while I realised I wanted to learn coding properly. Since then I have taken courses with <a href="https://www.thinkful.com">Thinkful</a>, <a href="https://www.freecodecamp.com/rawreef">Free Code Camp</a>,
+  <a href="https://www.codeschool.com/">Code School</a>, and built the various projects listed here.</p>
+<p>Free Code Camp has been the biggest help and inspiration to me. In working through its curriculum I have met other learners, pair programmed, got help and given help in its chat rooms, and enjoyed becoming part of a large community of people learning
+  coding.</p>
+<p>I have a background in language training and live in Finland with my wife and two young daughters.</p>
+
+</div>
+
+</section>
+
 </main>
-    
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="index.js"></script>
+
 </body>
 </html>

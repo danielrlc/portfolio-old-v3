@@ -10,7 +10,7 @@ body {
 h2 {
   font-size: 1.6em;
   font-weight: bold;
-  padding: 1em 0 1.4em 0;
+  padding: 3em 0 1.4em 0;
   text-align: center;
 }
 
@@ -22,7 +22,11 @@ h3 {
 
 p, td {
   margin: 10px 0;
-  line-height: 1.4;
+  line-height: 1.5;
+}
+
+em {
+  font-weight: bold;
 }
 
 ul {
@@ -74,6 +78,10 @@ ul {
 /* ---------------------------------------------------------- */
 /* Main section */
 /* ---------------------------------------------------------- */
+
+main {
+  margin: 0 0 5em 0;
+}
 
 #projects-wrapper {
   display: flex;
@@ -199,9 +207,27 @@ tr:nth-child(even) {
   background: palegoldenrod;
 }
 
+tr:nth-child(odd) {
+  background: #fff;
+}
+
 tfoot td {
   color: #888;
   font-size: 13px;
+}
+
+.table-center {
+  text-align: center;
+}
+
+/*********************************************************/
+/* ABOUT section
+**********************************************************/
+
+.about {
+  width: 38em;
+  margin: 0 auto;
+  max-width: 90%;
 }
 
 
@@ -209,9 +235,12 @@ tfoot td {
 /* Media queries */
 /* ---------------------------------------------------------- */
 
-@media screen and (max-width: 819px) {
+@media screen and (max-width: 849px) {
+  .main-nav {
+  padding: 18px 40px 0 40px;
+}
+  
   #my-name, #main-nav-list {
-    display: block;
     background-color: #111;
     float: none;
     width: 100%;
