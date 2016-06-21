@@ -7,6 +7,13 @@ body {
   background-color: #eee;
 }
 
+/* Coming W3C standard to make mobile devices responsive */
+/* http://webdesign.tutsplus.com/articles/quick-tip-dont-forget-the-viewport-meta-tag--webdesign-5972 */
+@viewport, @-ms-viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
 h2 {
   font-size: 1.6em;
   font-weight: bold;
